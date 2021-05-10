@@ -1,0 +1,19 @@
+services:
+  supnode1:
+    build: .
+    ports:
+      - 8888
+      - 5005:5005
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./supnode1:/home/supnode1
+    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar /home/supnode1/supcrypto.jar
+    tty: true
+  supnode2:
+    build: .
+    ports:
+      - 8888
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./supnode2:/home/supnode2
+    tty: true
