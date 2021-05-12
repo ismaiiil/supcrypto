@@ -1,22 +1,37 @@
+version: '3.3'
+
+networks:
+  static_host:
+    ipam:
+      driver: default
+      config:
+        - subnet: 169.69.0.0/24
+
 services:
   supnode1:
-    build: .
+    image: supcrypto_windows
     ports:
-      - 8888
-      - 5005:5005
+    - 5005
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./target/dockerhomes/supnode1:/opt/app
-      - ./target/supcrypto.jar:/opt/app/supcrypto.jar:ro
-    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar /opt/app/supcrypto.jar
+      - ./target/nodes/supnode1:c:\jars
+#    entrypoint: java -jar "C:\jars\supcrypto.jar"
+#    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
+    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
+
     tty: true
+    networks:
+      static_host:
+        ipv4_address: 169.69.0.2
   supnode2:
-    build: .
+    image: supcrypto_windows
     ports:
-      - 8888
+      - 5005
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./target/dockerhomes/supnode2:/opt/app
-      - ./target/supcrypto.jar:/opt/app/supcrypto.jar:ro
-    entrypoint: java -jar /opt/app/supcrypto.jar
+      - ./target/nodes/supnode2:c:\jars
+    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
     tty: true
+    networks:
+      static_host:
+        ipv4_address: 169.69.0.3

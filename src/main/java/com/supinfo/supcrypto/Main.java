@@ -7,7 +7,7 @@ public class Main {
         System.out.println("test worldsss!");
         System.out.println("test 2!");
         while(true){
-            //TODO make maven copy to the 2 folders, copy doersnt work in docker file, only once SAT CRWEATE
+
         }
     }
 }

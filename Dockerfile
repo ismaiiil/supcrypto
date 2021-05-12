@@ -1,2 +1,1 @@
-FROM adoptopenjdk:latest
-#CMD ["java", "-jar", "/opt/app/supcrypto.jar"]
+FROM adoptopenjdk:11.0.11_9-jdk-hotspot-windowsservercore-1809
