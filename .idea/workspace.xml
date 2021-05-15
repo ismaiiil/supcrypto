@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afeb230e-2df3-48ae-984b-a86ef9f204f7" name="Default Changelist" comment="modularised program to add shared code later for android">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="afeb230e-2df3-48ae-984b-a86ef9f204f7" name="Default Changelist" comment="fix target commited">
+      <change afterPath="$PROJECT_DIR$/supcrypto-serializable/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supcrypto-serializable/src/main/java/com/ismaiiil/serializable/TCP/TCPMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supcrypto-serializable/src/main/java/com/ismaiiil/serializable/Utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supcrypto-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/supcrypto-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supcrypto-core/src/main/java/com/ismaiiil/supcrypto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/supcrypto-core/src/main/java/com/ismaiiil/supcrypto/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supcrypto-core/supcrypto-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/supcrypto-core/supcrypto-core.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +58,12 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Batch.copy_jars">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package -U" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker: Compose Deployment">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ismaiiil.supcrypto.Main" />
       <module name="supcrypto-core" />
@@ -114,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621108261903</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix target commited">
+      <created>1621108396879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621108396879</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix target commited">
+      <created>1621108522324</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621108522324</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modularised program to add shared code later for android" />
-    <option name="LAST_COMMIT_MESSAGE" value="modularised program to add shared code later for android" />
+    <MESSAGE value="fix target commited" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix target commited" />
   </component>
 </project>

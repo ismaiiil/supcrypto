@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="supcrypto-core" />
+        <module name="supcrypto-serializable" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="supcrypto" target="11" />
       <module name="supcrypto-core" target="11" />
+      <module name="supcrypto-serializable" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

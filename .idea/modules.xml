@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/supcrypto.iml" filepath="$PROJECT_DIR$/supcrypto.iml" />
       <module fileurl="file://$PROJECT_DIR$/supcrypto-core/supcrypto-core.iml" filepath="$PROJECT_DIR$/supcrypto-core/supcrypto-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supcrypto-serializable/supcrypto-serializable.iml" filepath="$PROJECT_DIR$/supcrypto-serializable/supcrypto-serializable.iml" />
     </modules>
   </component>
 </project>

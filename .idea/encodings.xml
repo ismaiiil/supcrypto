@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/supcrypto-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/supcrypto-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/supcrypto-serializable/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/supcrypto-serializable/src/main/resources" charset="UTF-8" />
   </component>
 </project>
