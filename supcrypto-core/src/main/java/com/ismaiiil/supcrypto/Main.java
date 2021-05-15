@@ -1,4 +1,4 @@
-package com.supinfo.supcrypto;
+package com.ismaiiil.supcrypto;
 
 public class Main {
     public static void main(String[] args) {

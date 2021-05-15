@@ -14,7 +14,7 @@ services:
     - 5005
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./target/nodes/supnode1:c:\jars
+      - ${IDEA_HOME}\supcrypto\supcrypto-core\target\nodes\supnode1:c:\jars
 #    entrypoint: java -jar "C:\jars\supcrypto.jar"
 #    entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
     entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
@@ -29,7 +29,7 @@ services:
       - 5005
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - ./target/nodes/supnode2:c:\jars
+      - ${IDEA_HOME}\supcrypto\supcrypto-core\target\nodes\supnode2:c:\jars
     entrypoint: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Djava.security.egd=file:/dev/./urandom -jar "c:\jars\supcrypto.jar"
     tty: true
     networks:
